@@ -33,6 +33,9 @@ public class Html2PdfUsingOpenHtml {
 		return document;
 	}
 
+	/**
+	 *Method is used to convert html to pdf
+	 */
 	private static void xhtmlToPdfConverter(Document doc, String outputPdf) throws IOException {
 		try (OutputStream os = new FileOutputStream(outputPdf)) {
 			String baseUri = FileSystems.getDefault().getPath("src/main/resources/").toUri().toString();
